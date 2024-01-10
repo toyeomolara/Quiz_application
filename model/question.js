@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
-
+import mongoose from "mongoose";
 const questionSchema = new mongoose.Schema({
     question: String,
-    answers: [String],
-    correctAnswer: Number,
+    answers: [],
+    correctAnswer: String
 });
 
 const Question = mongoose.model('Question', questionSchema);
 
-module.exports = Question;
+export default Question;
 

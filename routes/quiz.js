@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Question = require('../models/question');
+const Question = require('../model/question');
 
 // Add your CRUD operations and quiz logic here
 

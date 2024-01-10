@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="/css/create.css">
 </head>
 <body>
-    <h1>Please create a question</h1> //formcontains a text or input area 
-    type in answer3other wrong answers
+   
    <div class="app">
         <h1>Create quiz</h1>
-        <div class="quiz">
-            <h2 id="question">Question 1</h2>
-            <div class="answer_btn" id="answer">
-                <button class="btn">answer 1</button>
-                <button class="btn">answer 2</button>
-                <button class="btn">answer 3</button>
-                <button class="btn">answer 4</button>
-            </div>
-            
+        <form method="post" action="/questions">
 
-        </div>
+            <div class="quiz">
+                <h2 id="question">Question 1</h2>
+                <div>
+                    <textarea class="question"rows="3" name="question" cols="30" placeholder="input questions"></textarea><br/>
+                </div>
+        
+                <div class="answer_btn" id="answer">
+                    <label for="correctAnswer">correct answer</label>
+                    <input type="text" id="correctAnswer" name="correctAnswer"/><br/><br/>
+                    <label for="answer">Option 1</label>
+                    <input id="option1" name="option1"><br/><br/>
+                    <label for="answer">Option 2</label>
+                    <input id="option2" name="option2"><br/><br/>
+                    <label for="answer">Option 3</label>
+                    <input id="option3" name="option3"><br/><br/>
+                    <input type="submit" value="Submit"/>
+                </div>
+                
+    
+            </div>
+        </form>
+       
 
    </div>
 
